@@ -31,17 +31,17 @@ const barData = {
     {
       label: "Ingresos",
       data: [1500000, 1500000, 1500000, 1750000, 1750000, 1750000, 2000000, 2000000, 2000000, 2000000, 2000000, 2000000],
-      backgroundColor: "#6870fa",
+      backgroundColor: "#3b82f6 ",
     },
     {
       label: "Gastos",
       data: [800000, 800000, 800000, 900000, 900000, 900000, 950000, 950000, 950000, 950000, 950000, 1000000],
-      backgroundColor: "#00c6ae",
+      backgroundColor: "#10b981 ",
     },
     {
       label: "Inversiones",
       data: [700000, 700000, 700000, 850000, 850000, 850000, 850000, 950000, 950000, 950000, 950000, 500000],
-      backgroundColor: "#ff6384",
+      backgroundColor: "#ef4444   ",
     },
   ],
 };

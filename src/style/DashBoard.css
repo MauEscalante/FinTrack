@@ -21,10 +21,6 @@
   margin-bottom: 32px;
 }
 
-.dashboard-cards {
-  display: flex;
-  gap: 24px;
-}
 
 .dashboard-doughnut {
   min-width: 80px;

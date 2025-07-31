@@ -40,17 +40,17 @@
 }
 
 .dashboard-doughnut-legend-color.ingresos {
-  background: #00c6ae;
+  background: #3b82f6;
 }
 .dashboard-doughnut-legend-color.gastos {
-  background: #6870fa;
+  background: #10b981;
 }
 .dashboard-doughnut-legend-color.inversiones {
-  background: #ff6384;
+  background: #ef4444;
 }
 
 .dashboard-doughnut-legend-color.sobrante {
-  background: #ffcd56;
+  background: #a855f7 ;
 }
 
 

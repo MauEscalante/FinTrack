@@ -1,4 +1,4 @@
-import DashBoard from "./components/DashBoard";
+import DashBoard from "./pages/DashBoard";
 import "./style/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SlideBar from "./pages/SlideBar";

@@ -1,6 +1,6 @@
 import React from "react";
-import BarChart from "./BarChart";
-import DoughnutChart from "./DoughnutChart";
+import BarChart from "../components/BarChart";
+import DoughnutChart from "../components/DoughnutChart";
 import "../style/DashBoard.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";

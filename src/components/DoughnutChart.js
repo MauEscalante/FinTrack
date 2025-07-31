@@ -16,7 +16,7 @@ const doughnutData = {
   datasets: [
     {
       data: [2000000, 1000000, 500000, 500000],
-      backgroundColor: ["#00c6ae", "#6870fa", "#ff6384", "#ffcd56"],
+      backgroundColor: ["#3b82f6", "#10b981", "#ef4444", "#a855f7 "],
       borderWidth: 2,
       borderColor: "#232d3e",
     },
