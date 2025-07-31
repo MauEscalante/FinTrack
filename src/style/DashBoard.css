@@ -1,0 +1,139 @@
+.dashboard-year-picker {
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-size: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    outline: none;
+    cursor: pointer;
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    color: #232d3e;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+/* Nueva fila superior para cards y gráfico de torta */
+.dashboard-top-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 24px;
+}
+
+.dashboard-doughnut {
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashboard-container {
+  background: #1f2a40;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-title {
+  color: #e0e0e0;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+.dashboard-card {
+  background: #232d3e;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dashboard-card-icon {
+  font-size: 28px;
+}
+.dashboard-card-value {
+  color: #e0e0e0;
+  font-size: 22px;
+  font-weight: 600;
+}
+.dashboard-card-label {
+  color: #00c6ae;
+  font-size: 16px;
+}
+.dashboard-card-percent {
+  color: #43e6ff;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.dashboard-main {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  align-items: stretch;
+}
+.dashboard-bar {
+  flex: 2;
+  background: #232d3e;
+  border-radius: 8px;
+  padding: 12px;
+}
+.dashboard-doughnut {
+  flex: 1;
+  background: #232d3e;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-campaign-title {
+  color: #e0e0e0;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+.dashboard-campaign-revenue {
+  color: #00c6ae;
+  margin-top: 8px;
+  font-size: 12px;
+}
+.dashboard-campaign-desc {
+  color: #a3a3a3;
+  font-size: 10px;
+}
+
+.dashboard-filter{
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #222;
+    background: #232d3e;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 16px 24px;
+    min-width: 180px;
+    max-width: 220px;
+}
+.dashboard-filter-label {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+    text-align: center;
+}
+

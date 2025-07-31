@@ -17,24 +17,34 @@
   font-weight: 600;
 }
 
+.sidebar-menu {
+  padding: 0 10px;
+  margin-top: 40%;
+}
+
 .sidebar-custom .sidebar-menuitem {
   display: flex;
   align-items: center;
-  padding: 8px 0 8px 20px;
+  padding: 8px 0 8px 50px;
+  color: #e0e0e0;
   font-size: 1rem;
   border-radius: 6px;
+  text-transform: capitalize;
+
   transition: background 0.2s, color 0.2s;
-  color: azure
 }
 
+.sidebar-custom .sidebar-menuitem:hover {
+  background: #232d3e;
+  color: #868dfb;
+}
 
-
-.sidebar-custom .sidebar-menuitem.active {
+.sidebar-custom .sidebar-link .options.active {
   color: #6870fa;
 }
 
 .sidebar-custom .sidebar-menuitem .MuiSvgIcon-root {
-  margin-right: 16px;
+  margin-right: 5px;
   font-size: 1.2rem;
 }
 
@@ -43,4 +53,8 @@
   color: inherit;
 }
 
-
+.sidebar-custom .sidebar-link .options {
+  font-size: 0.9rem;
+  font-family: 'Roboto', italic;
+  color: #e0e0e0;
+}
