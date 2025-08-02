@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Typography } from "@mui/material";
 import "../style/SlideBar.css";
 import { Link } from "react-router-dom";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
+import HomeIcon from '@mui/icons-material/Home';
+import finTrack from "../assets/finTrack.png";
+import PointOfSaleOutlinedIcon from '@mui/icons-material/PointOfSaleOutlined';
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+import CurrencyExchangeOutlinedIcon from '@mui/icons-material/CurrencyExchangeOutlined';
+import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import Button from "@mui/material/Button";
 
 
@@ -16,9 +16,10 @@ const SlideBar = () => {
     const [selected, setSelected] = useState("Dashboard");
 
     return (
-        <div className="sidebar-custom" style={{ borderRight: "none", boxShadow: "none" }}>
+        <div className="sidebar-custom"  >
             <div className="sidebar-header">
-                <Typography variant="h6">FinTrack</Typography>
+                <img src={finTrack} alt="FinTrack Logo" className="sidebar-logo" />
+                <span className="sidebar-title">FinTrack</span>
             </div>
 
             <div className="sidebar-menu">
@@ -27,18 +28,18 @@ const SlideBar = () => {
                     onClick={() => setSelected("Dashboard")}
 
                 >
-                    <HomeOutlinedIcon />
+                    <HomeIcon className={`sidebar-icon${selected === "Dashboard" ? " active" : ""}`} />
                     <Link to="/" className="sidebar-link">
 
                         <span className={`options${selected === "Dashboard" ? " active" : ""}`}>Dashboard</span>
                     </Link>
                 </Button>
-                <div className="sidebar-section">Data</div>
+              <hr className="MuiDivider-root MuiDivider-fullWidth css-1a99o9i"/>
                 <Button
                     className={`sidebar-menuitem`}
                     onClick={() => setSelected("Transacciones")}
                 >
-                    <PeopleOutlinedIcon />
+                    <PointOfSaleOutlinedIcon className={`sidebar-icon${selected === "Transacciones" ? " active" : ""}`} />
                     <Link to="/transacciones" className="sidebar-link">
                         <span className={`options${selected === "Transacciones" ? " active" : ""}`}>Transacciones</span>
                     </Link>
@@ -47,7 +48,7 @@ const SlideBar = () => {
                     className={`sidebar-menuitem`}
                     onClick={() => setSelected("Presupuesto")}
                 >
-                    <ContactsOutlinedIcon />
+                    <ContactsOutlinedIcon className={`sidebar-icon${selected === "Presupuesto" ? " active" : ""}`} />
                     <Link to="/presupuesto" className="sidebar-link">
                         <span className={`options${selected === "Presupuesto" ? " active" : ""}`}>Presupuesto</span>
                     </Link>
@@ -56,19 +57,19 @@ const SlideBar = () => {
 
                 <Button
                     className={`sidebar-menuitem`}
-                    onClick={() => setSelected("ingresos/Egresos")}
+                    onClick={() => setSelected("ingresos&egresos")}
                 >
-                    <ReceiptOutlinedIcon />
-                    <Link to="/ingresos" className="sidebar-link">
-                        <span className={`options${selected === "ingresos" ? " active" : ""}`}>ingresos/Egresos</span>
+                    <CurrencyExchangeOutlinedIcon className={`sidebar-icon${selected === "ingresos&egresos" ? " active" : ""}`} />
+                    <Link to="/ingresos&egresos" className="sidebar-link">
+                        <span className={`options${selected === "ingresos&egresos" ? " active" : ""}`}>ingresos/Egresos</span>
                     </Link>
                 </Button>
-                <div className="sidebar-section">Pages</div>
+              <hr className="MuiDivider-root MuiDivider-fullWidth css-1a99o9i"/>
                 <Button
                     className={`sidebar-menuitem`}
                     onClick={() => setSelected("Profile")}
                 >
-                    <PersonOutlinedIcon />
+                    <Person2OutlinedIcon className={`sidebar-icon${selected === "Profile" ? " active" : ""}`} />
                     <Link to="/profile" className="sidebar-link">
                         <span className={`options${selected === "Profile" ? " active" : ""}`}>Profile</span>
                     </Link>
@@ -77,12 +78,18 @@ const SlideBar = () => {
                     className={`sidebar-menuitem`}
                     onClick={() => setSelected("Ajustes")}
                 >
-                    <HelpOutlineOutlinedIcon />
+                    <SettingsOutlinedIcon className={`sidebar-icon${selected === "Ajustes" ? " active" : ""}`} />
                     <Link to="/ajustes" className="sidebar-link">
                         <span className={`options${selected === "Ajustes" ? " active" : ""}`}>Ajustes</span>
                     </Link>
                 </Button>
 
+            </div>
+            {/* Botón Get template al fondo */}
+            <div className="sidebar-footer">
+                <a className="sidebar-template-btn">
+                    <span className="sidebar-footer-text"> Download CSV</span>
+                </a>
             </div>
         </div>
     );

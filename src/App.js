@@ -13,7 +13,7 @@ function App() {
             <Route path="/" element={<DashBoard />} />
             <Route path="/transacciones" element={<div>Manage Team</div>} />
             <Route path="/presupuesto" element={<div>Contacts Information</div>} />
-            <Route path="/ingresos" element={<div>Invoices Balances</div>} />
+            <Route path="/ingresos&egresos" element={<div>Invoices Balances</div>} />
             <Route path="/profile" element={<div>Profile Form</div>} />
             <Route path="/ajustes" element={<div>Calendar</div>} />
           </Routes>
